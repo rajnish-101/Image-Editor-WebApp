@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editing Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h2>Image Editing Web App</h2>
+    <p>Made By Rajnish Rai student of IGNOU</p>
+
+    <label for="upload" class="custom-upload">Upload Image</label>
+    <input type="file" id="upload">
+
+<div id="frame">
+    <h3>Original Image</h3>
+    <img id="originalImage" src="" alt="Original Image">
+
+    <canvas id="imageCanvas"></canvas>
+
+    <h3>Edited Image</h3>
+    <img id="editedImage" src="" alt="Edited Image">
+</div>
+    
+    <br>
+
+    <div id="btn">
+    <label>Brightness:</label>
+    <input type="range" id="brightness" min="0" max="200" value="100">
+
+    <label>Contrast:</label>
+    <input type="range" id="contrast" min="0" max="200" value="100">
+
+    <button id="rotate">Rotate</button>
+    <button id="flip">Flip</button>
+    <button id="compress">Compress</button>
+    <button id="reset">Reset</button>
+    <button id="download">Download</button>
+
+    <div id="compressedImage"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
